@@ -1,0 +1,436 @@
+{
+  "source": "p3_classroom_engagement",
+  "video": "video_sample_1.mov",
+  "date": "2026-03-25",
+  "session_duration_sec": 122.52,
+  "window_size_sec": 6,
+  "total_persons_detected": 205,
+  "overall_engagement_score": 34,
+  "peak_window": {
+    "window_id": 7,
+    "start_sec": 35.99,
+    "end_sec": 41.97,
+    "score": 49.23,
+    "dominant_gaze": "forward"
+  },
+  "trough_window": {
+    "window_id": 17,
+    "start_sec": 95.98,
+    "end_sec": 101.96,
+    "score": 0,
+    "dominant_gaze": "forward"
+  },
+  "worst_3_windows": [
+    {
+      "window_id": 17,
+      "start_sec": 95.98,
+      "end_sec": 101.96,
+      "score": 0,
+      "thumbnail_collage_b64": ""
+    },
+    {
+      "window_id": 19,
+      "start_sec": 107.97,
+      "end_sec": 113.95,
+      "score": 0,
+      "thumbnail_collage_b64": ""
+    },
+    {
+      "window_id": 18,
+      "start_sec": 101.97,
+      "end_sec": 107.96,
+      "score": 23.08,
+      "thumbnail_collage_b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAA8ADwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDx2kNIDzSmqJHL14q9a2zSuKpwqWcAdT0rq9H01kAkk6+lZTkkjejByZfs7UpEo28VBqryravHbWjzMx+YqQNvvWjNMIIweSegAFWdLIkjIlUEE/dIrlUtbnY4e7ZHmcFrNd3TQrgSA/Nu7VLLpU0T7dwbHcCut8RaKtrdR6laR7WT76qfvCuYm10vKWjt22n+91rthNtXRwzpqL1JrDSYJYzJdF2Xsitiobu1t43/AHCso9GbNa1mwddoxn3pTpsrTbnVCh9DWLqNM6fYprQzdLiAuNxHSuztMFR6ViR2axN8orXtMqAKxqSubU4cqsaJiTGSoNQlgpxgge1S+Z8tVZpkUndn2xWSZoYfiPW5raAW0MBG/gyOc1xgatzxJua7BaXcOqr6Vz569a9GgrRuebiZXlY6XTWZmAJrcaKURZDDisSwUpIM10cR3KBXFUep301oU42YHDVowHIFQS2/cCkXfGuQenrUblmjTHUGq9nNeakzx6bZNezKMeXE6g5/E1j6/wD8JfYRn7VosthDzmTZ5h/MdKcacpPQidSMdzI8SNAb7C/6zPNYZUdqkcvPJ5jszuf4m61IITjpXo01yxszzKkuaR0yqIyDWnbyjaMGsZnYjk0iSunKnFcMo3PfWGdtzphOjDBIzWbrGoxw23lRkNK/AArPFzKc5aq9zp6S2cl200vmD5gARgEfhRCF2RKk47lSawkgjaaSOWMk/eDFc/lVaK8mgmDR3VyG6czNj6YJ5rqdRYvphZjk/Kf0rD8mOUrvQH3xXTGdtCJ4D2sedOxTJMjljgk8k1MiqV560+a3jj5XI/GoBWqZ5Veg6b1Z/9k="
+    }
+  ],
+  "time_windows": [
+    {
+      "engagement_score": 35.65,
+      "persons_count": 17,
+      "gaze_distribution": {
+        "forward": 2,
+        "down": 1,
+        "left": 7,
+        "right": 7,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R3C4": 36.61,
+        "R2C3": 33.9
+      },
+      "window_id": 1,
+      "start_sec": 0.0,
+      "end_sec": 5.98
+    },
+    {
+      "engagement_score": 38.79,
+      "persons_count": 22,
+      "gaze_distribution": {
+        "forward": 5,
+        "down": 2,
+        "left": 15,
+        "right": 0,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R3C4": 37.7,
+        "R2C3": 42.47
+      },
+      "window_id": 2,
+      "start_sec": 6.0,
+      "end_sec": 11.98
+    },
+    {
+      "engagement_score": 41.08,
+      "persons_count": 10,
+      "gaze_distribution": {
+        "forward": 3,
+        "down": 2,
+        "left": 4,
+        "right": 1,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R3C4": 41.79,
+        "R2C3": 39.4
+      },
+      "window_id": 3,
+      "start_sec": 12.0,
+      "end_sec": 17.98
+    },
+    {
+      "engagement_score": 43.2,
+      "persons_count": 5,
+      "gaze_distribution": {
+        "forward": 3,
+        "down": 0,
+        "left": 0,
+        "right": 2,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C3": 45.84,
+        "R2C4": 52.84,
+        "R3C3": 18.66
+      },
+      "window_id": 4,
+      "start_sec": 18.0,
+      "end_sec": 23.98
+    },
+    {
+      "engagement_score": 31.84,
+      "persons_count": 7,
+      "gaze_distribution": {
+        "forward": 1,
+        "down": 0,
+        "left": 6,
+        "right": 0,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C3": 31.84
+      },
+      "window_id": 5,
+      "start_sec": 23.99,
+      "end_sec": 29.98
+    },
+    {
+      "engagement_score": 28.92,
+      "persons_count": 8,
+      "gaze_distribution": {
+        "forward": 0,
+        "down": 1,
+        "left": 6,
+        "right": 1,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C3": 27.7,
+        "R2C2": 22.61,
+        "R3C4": 35.1
+      },
+      "window_id": 6,
+      "start_sec": 29.99,
+      "end_sec": 35.97
+    },
+    {
+      "engagement_score": 49.23,
+      "persons_count": 19,
+      "gaze_distribution": {
+        "forward": 10,
+        "down": 0,
+        "left": 8,
+        "right": 1,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C3": 52.56,
+        "R3C4": 47.29
+      },
+      "window_id": 7,
+      "start_sec": 35.99,
+      "end_sec": 41.97
+    },
+    {
+      "engagement_score": 47.59,
+      "persons_count": 14,
+      "gaze_distribution": {
+        "forward": 7,
+        "down": 1,
+        "left": 3,
+        "right": 3,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R3C4": 47.8,
+        "R2C3": 55.18,
+        "R2C2": 22.61
+      },
+      "window_id": 8,
+      "start_sec": 41.99,
+      "end_sec": 47.97
+    },
+    {
+      "engagement_score": 44.15,
+      "persons_count": 19,
+      "gaze_distribution": {
+        "forward": 6,
+        "down": 6,
+        "left": 5,
+        "right": 2,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C3": 38.63,
+        "R3C4": 48.15
+      },
+      "window_id": 9,
+      "start_sec": 47.99,
+      "end_sec": 53.97
+    },
+    {
+      "engagement_score": 30.94,
+      "persons_count": 3,
+      "gaze_distribution": {
+        "forward": 0,
+        "down": 0,
+        "left": 2,
+        "right": 1,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C3": 35.1,
+        "R3C2": 22.61
+      },
+      "window_id": 10,
+      "start_sec": 53.99,
+      "end_sec": 59.97
+    },
+    {
+      "engagement_score": 41.29,
+      "persons_count": 15,
+      "gaze_distribution": {
+        "forward": 4,
+        "down": 0,
+        "left": 6,
+        "right": 5,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R3C4": 44.17,
+        "R2C3": 37.44,
+        "R3C2": 27.86
+      },
+      "window_id": 11,
+      "start_sec": 59.99,
+      "end_sec": 65.97
+    },
+    {
+      "engagement_score": 30.27,
+      "persons_count": 18,
+      "gaze_distribution": {
+        "forward": 2,
+        "down": 1,
+        "left": 6,
+        "right": 9,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C3": 29.66,
+        "R3C4": 35.1,
+        "R2C4": 33.82,
+        "R3C2": 22.61
+      },
+      "window_id": 12,
+      "start_sec": 65.98,
+      "end_sec": 71.97
+    },
+    {
+      "engagement_score": 40.54,
+      "persons_count": 13,
+      "gaze_distribution": {
+        "forward": 6,
+        "down": 1,
+        "left": 1,
+        "right": 5,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C3": 34.11,
+        "R3C4": 61.96
+      },
+      "window_id": 13,
+      "start_sec": 71.98,
+      "end_sec": 77.96
+    },
+    {
+      "engagement_score": 34.35,
+      "persons_count": 15,
+      "gaze_distribution": {
+        "forward": 1,
+        "down": 1,
+        "left": 4,
+        "right": 9,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C3": 31.61,
+        "R3C4": 41.89
+      },
+      "window_id": 14,
+      "start_sec": 77.98,
+      "end_sec": 83.96
+    },
+    {
+      "engagement_score": 48.8,
+      "persons_count": 7,
+      "gaze_distribution": {
+        "forward": 4,
+        "down": 1,
+        "left": 1,
+        "right": 1,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R3C3": 60.92,
+        "R2C3": 46.78
+      },
+      "window_id": 15,
+      "start_sec": 83.98,
+      "end_sec": 89.96
+    },
+    {
+      "engagement_score": 33.2,
+      "persons_count": 9,
+      "gaze_distribution": {
+        "forward": 0,
+        "down": 3,
+        "left": 5,
+        "right": 1,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R3C3": 22.73,
+        "R3C4": 34.43,
+        "R2C3": 35.1
+      },
+      "window_id": 16,
+      "start_sec": 89.98,
+      "end_sec": 95.96
+    },
+    {
+      "engagement_score": 0,
+      "persons_count": 0,
+      "gaze_distribution": {
+        "forward": 0,
+        "down": 0,
+        "left": 0,
+        "right": 0,
+        "unknown": 0
+      },
+      "spatial_zones": {},
+      "window_id": 17,
+      "start_sec": 95.98,
+      "end_sec": 101.96,
+      "thumbnail_collage_b64": ""
+    },
+    {
+      "engagement_score": 23.08,
+      "persons_count": 1,
+      "gaze_distribution": {
+        "forward": 0,
+        "down": 0,
+        "left": 1,
+        "right": 0,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R2C2": 23.08
+      },
+      "window_id": 18,
+      "start_sec": 101.97,
+      "end_sec": 107.96,
+      "thumbnail_collage_b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAA8ADwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDx2kNIDzSmqJHL14q9a2zSuKpwqWcAdT0rq9H01kAkk6+lZTkkjejByZfs7UpEo28VBqryravHbWjzMx+YqQNvvWjNMIIweSegAFWdLIkjIlUEE/dIrlUtbnY4e7ZHmcFrNd3TQrgSA/Nu7VLLpU0T7dwbHcCut8RaKtrdR6laR7WT76qfvCuYm10vKWjt22n+91rthNtXRwzpqL1JrDSYJYzJdF2Xsitiobu1t43/AHCso9GbNa1mwddoxn3pTpsrTbnVCh9DWLqNM6fYprQzdLiAuNxHSuztMFR6ViR2axN8orXtMqAKxqSubU4cqsaJiTGSoNQlgpxgge1S+Z8tVZpkUndn2xWSZoYfiPW5raAW0MBG/gyOc1xgatzxJua7BaXcOqr6Vz569a9GgrRuebiZXlY6XTWZmAJrcaKURZDDisSwUpIM10cR3KBXFUep301oU42YHDVowHIFQS2/cCkXfGuQenrUblmjTHUGq9nNeakzx6bZNezKMeXE6g5/E1j6/wD8JfYRn7VosthDzmTZ5h/MdKcacpPQidSMdzI8SNAb7C/6zPNYZUdqkcvPJ5jszuf4m61IITjpXo01yxszzKkuaR0yqIyDWnbyjaMGsZnYjk0iSunKnFcMo3PfWGdtzphOjDBIzWbrGoxw23lRkNK/AArPFzKc5aq9zp6S2cl200vmD5gARgEfhRCF2RKk47lSawkgjaaSOWMk/eDFc/lVaK8mgmDR3VyG6czNj6YJ5rqdRYvphZjk/Kf0rD8mOUrvQH3xXTGdtCJ4D2sedOxTJMjljgk8k1MiqV560+a3jj5XI/GoBWqZ5Veg6b1Z/9k="
+    },
+    {
+      "engagement_score": 0,
+      "persons_count": 0,
+      "gaze_distribution": {
+        "forward": 0,
+        "down": 0,
+        "left": 0,
+        "right": 0,
+        "unknown": 0
+      },
+      "spatial_zones": {},
+      "window_id": 19,
+      "start_sec": 107.97,
+      "end_sec": 113.95,
+      "thumbnail_collage_b64": ""
+    },
+    {
+      "engagement_score": 44.9,
+      "persons_count": 3,
+      "gaze_distribution": {
+        "forward": 1,
+        "down": 1,
+        "left": 0,
+        "right": 1,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "R3C4": 34.67,
+        "R2C3": 65.35
+      },
+      "window_id": 20,
+      "start_sec": 113.97,
+      "end_sec": 119.95
+    }
+  ],
+  "session_spatial_heatmap": {
+    "R1C1": 0,
+    "R1C2": 0,
+    "R1C3": 0,
+    "R1C4": 0,
+    "R1C5": 0,
+    "R1C6": 0,
+    "R2C1": 0,
+    "R2C2": 22,
+    "R2C3": 40,
+    "R2C4": 43,
+    "R2C5": 0,
+    "R2C6": 0,
+    "R3C1": 0,
+    "R3C2": 24,
+    "R3C3": 34,
+    "R3C4": 42,
+    "R3C5": 0,
+    "R3C6": 0,
+    "R4C1": 0,
+    "R4C2": 0,
+    "R4C3": 0,
+    "R4C4": 0,
+    "R4C5": 0,
+    "R4C6": 0
+  }
+}

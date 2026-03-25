@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Classroom Engagement Report - Sentio Mind</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:system-ui,-apple-system,sans-serif;background:#f3f4f6;
+        color:#111827;padding:24px;}
+  h1{font-size:22px;font-weight:700;color:#1e3a5f;margin-bottom:4px;}
+  h2{font-size:16px;font-weight:600;color:#374151;margin:24px 0 12px;}
+  .card{background:#fff;border-radius:12px;padding:20px;
+          box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:20px;}
+  .badge{display:inline-flex;align-items:center;gap:6px;background:#f9fafb;
+           border:1px solid #e5e7eb;border-radius:8px;padding:10px 16px;font-size:13px;}
+  .badge strong{font-size:22px;color:#111827;}
+  .badges{display:flex;flex-wrap:wrap;gap:12px;}
+  table{border-collapse:collapse;width:100%;}
+  .thumbs{display:flex;flex-wrap:wrap;gap:14px;}
+  canvas{display:block;max-width:100%;}
+  footer{text-align:center;color:#9ca3af;font-size:12px;margin-top:32px;}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Classroom Engagement Report</h1>
+  <p style="color:#6b7280;font-size:13px;margin-top:4px;">
+    Sentio Mind &nbsp;·&nbsp; video_sample_1.mov &nbsp;·&nbsp; 2026-03-25
+  </p>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">Session Summary</h2>
+  <div class="badges">
+    <div class="badge"><div>
+      <strong style="color:#ef4444">34%</strong><br>
+      <span>Overall engagement</span>
+    </div></div>
+    <div class="badge"><div>
+      <strong>123s</strong><br>
+      <span>Session duration</span>
+    </div></div>
+    <div class="badge"><div>
+      <strong>205</strong><br>
+      <span>Person detections</span>
+    </div></div>
+    <div class="badge"><div>
+      <strong style="color:#22c55e">49.23%</strong><br>
+      <span>Peak window 7 @ 36s</span>
+    </div></div>
+    <div class="badge"><div>
+      <strong style="color:#ef4444">0%</strong><br>
+      <span>Trough window 17 @ 96s</span>
+    </div></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">Group Engagement Timeline</h2>
+  <p style="font-size:12px;color:#6b7280;margin-bottom:12px;">
+    One point per 6-second window.
+    <span style="color:#22c55e">&#9679;</span> >=70 engaged &nbsp;
+    <span style="color:#f59e0b">&#9679;</span> 50-70 moderate &nbsp;
+    <span style="color:#ef4444">&#9679;</span> &lt;50 low
+  </p>
+  <canvas id="chart" height="80"></canvas>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">Spatial Heatmap (4 x 6 Seat Grid)</h2>
+  <p style="font-size:12px;color:#6b7280;margin-bottom:12px;">
+    Row 1 = front of room | Column 1 = leftmost (camera view).
+    Colour: <span style="color:#ef4444">red=0</span> -> white=50 ->
+    <span style="color:#22c55e">green=100</span>
+  </p>
+  <div style="overflow-x:auto;">
+    <table>
+      <thead><tr style="background:#f9fafb;">
+        <th style="padding:6px 12px;font-size:12px;color:#6b7280;border:1px solid #e5e7eb;">Col 1</th><th style="padding:6px 12px;font-size:12px;color:#6b7280;border:1px solid #e5e7eb;">Col 2</th><th style="padding:6px 12px;font-size:12px;color:#6b7280;border:1px solid #e5e7eb;">Col 3</th><th style="padding:6px 12px;font-size:12px;color:#6b7280;border:1px solid #e5e7eb;">Col 4</th><th style="padding:6px 12px;font-size:12px;color:#6b7280;border:1px solid #e5e7eb;">Col 5</th><th style="padding:6px 12px;font-size:12px;color:#6b7280;border:1px solid #e5e7eb;">Col 6</th>
+      </tr></thead>
+      <tbody><tr><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R1C1</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R1C2</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R1C3</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R1C4</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R1C5</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R1C6</span><br><span style="font-size:13px">0</span></td></tr><tr><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R2C1</span><br><span style="font-size:13px">0</span></td><td style="background:#f69696;color:#1a1a1a;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R2C2</span><br><span style="font-size:13px">22</span></td><td style="background:#fbd9d9;color:#1a1a1a;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R2C3</span><br><span style="font-size:13px">40</span></td><td style="background:#fce4e4;color:#1a1a1a;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R2C4</span><br><span style="font-size:13px">43</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R2C5</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R2C6</span><br><span style="font-size:13px">0</span></td></tr><tr><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R3C1</span><br><span style="font-size:13px">0</span></td><td style="background:#f69d9d;color:#1a1a1a;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R3C2</span><br><span style="font-size:13px">24</span></td><td style="background:#f9c3c3;color:#1a1a1a;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R3C3</span><br><span style="font-size:13px">34</span></td><td style="background:#fce1e1;color:#1a1a1a;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R3C4</span><br><span style="font-size:13px">42</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R3C5</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R3C6</span><br><span style="font-size:13px">0</span></td></tr><tr><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R4C1</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R4C2</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R4C3</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R4C4</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R4C5</span><br><span style="font-size:13px">0</span></td><td style="background:#ef4444;color:#ffffff;padding:10px 6px;text-align:center;font-size:11px;border:1px solid #e5e7eb;"><span style="font-weight:600">R4C6</span><br><span style="font-size:13px">0</span></td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">3 Worst Engagement Windows</h2>
+  <p style="font-size:12px;color:#6b7280;margin-bottom:12px;">
+    Flagged for counsellor review. Face thumbnails from sampled frames.
+  </p>
+  <div class="thumbs">
+        <div style="flex:1;min-width:200px;background:#fff;border:1px solid #e5e7eb;
+                    border-radius:10px;padding:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-weight:600;color:#374151;">Worst #1</span>
+            <span style="background:#ef4444;color:#fff;border-radius:4px;
+                         padding:2px 8px;font-size:12px;">0.0%</span>
+          </div>
+          <div style="font-size:12px;color:#6b7280;margin-top:6px;">
+            Window 17 &nbsp;|&nbsp;
+            96.0s - 102.0s
+          </div>
+          <p style="color:#9ca3af;font-size:12px;margin-top:8px;">No faces detected</p>
+        </div>
+        <div style="flex:1;min-width:200px;background:#fff;border:1px solid #e5e7eb;
+                    border-radius:10px;padding:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-weight:600;color:#374151;">Worst #2</span>
+            <span style="background:#ef4444;color:#fff;border-radius:4px;
+                         padding:2px 8px;font-size:12px;">0.0%</span>
+          </div>
+          <div style="font-size:12px;color:#6b7280;margin-top:6px;">
+            Window 19 &nbsp;|&nbsp;
+            108.0s - 114.0s
+          </div>
+          <p style="color:#9ca3af;font-size:12px;margin-top:8px;">No faces detected</p>
+        </div>
+        <div style="flex:1;min-width:200px;background:#fff;border:1px solid #e5e7eb;
+                    border-radius:10px;padding:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-weight:600;color:#374151;">Worst #3</span>
+            <span style="background:#ef4444;color:#fff;border-radius:4px;
+                         padding:2px 8px;font-size:12px;">23.1%</span>
+          </div>
+          <div style="font-size:12px;color:#6b7280;margin-top:6px;">
+            Window 18 &nbsp;|&nbsp;
+            102.0s - 108.0s
+          </div>
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAA8ADwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDx2kNIDzSmqJHL14q9a2zSuKpwqWcAdT0rq9H01kAkk6+lZTkkjejByZfs7UpEo28VBqryravHbWjzMx+YqQNvvWjNMIIweSegAFWdLIkjIlUEE/dIrlUtbnY4e7ZHmcFrNd3TQrgSA/Nu7VLLpU0T7dwbHcCut8RaKtrdR6laR7WT76qfvCuYm10vKWjt22n+91rthNtXRwzpqL1JrDSYJYzJdF2Xsitiobu1t43/AHCso9GbNa1mwddoxn3pTpsrTbnVCh9DWLqNM6fYprQzdLiAuNxHSuztMFR6ViR2axN8orXtMqAKxqSubU4cqsaJiTGSoNQlgpxgge1S+Z8tVZpkUndn2xWSZoYfiPW5raAW0MBG/gyOc1xgatzxJua7BaXcOqr6Vz569a9GgrRuebiZXlY6XTWZmAJrcaKURZDDisSwUpIM10cR3KBXFUep301oU42YHDVowHIFQS2/cCkXfGuQenrUblmjTHUGq9nNeakzx6bZNezKMeXE6g5/E1j6/wD8JfYRn7VosthDzmTZ5h/MdKcacpPQidSMdzI8SNAb7C/6zPNYZUdqkcvPJ5jszuf4m61IITjpXo01yxszzKkuaR0yqIyDWnbyjaMGsZnYjk0iSunKnFcMo3PfWGdtzphOjDBIzWbrGoxw23lRkNK/AArPFzKc5aq9zp6S2cl200vmD5gARgEfhRCF2RKk47lSawkgjaaSOWMk/eDFc/lVaK8mgmDR3VyG6czNj6YJ5rqdRYvphZjk/Kf0rD8mOUrvQH3xXTGdtCJ4D2sedOxTJMjljgk8k1MiqV560+a3jj5XI/GoBWqZ5Veg6b1Z/9k=" style="width:100%;border-radius:6px;margin-top:8px;" alt="faces"/>
+        </div></div>
+</div>
+
+<footer>Sentio Mind · Classroom Engagement Analysis · 2026-03-25</footer>
+
+<script>
+(function(){
+  const labels = ["0s", "6s", "12s", "18s", "24s", "30s", "36s", "42s", "48s", "54s", "60s", "66s", "72s", "78s", "84s", "90s", "96s", "102s", "108s", "114s"];
+  const scores = [35.65, 38.79, 41.08, 43.2, 31.84, 28.92, 49.23, 47.59, 44.15, 30.94, 41.29, 30.27, 40.54, 34.35, 48.8, 33.2, 0, 23.08, 0, 44.9];
+  const dotCol = ["#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444"];
+  const canvas = document.getElementById('chart');
+  const ctx    = canvas.getContext('2d');
+  canvas.width = canvas.parentElement.clientWidth - 40 || 760;
+  canvas.height= 220;
+  const W=canvas.width,H=canvas.height;
+  const P={l:44,r:16,t:16,b:44};
+  const cW=W-P.l-P.r,cH=H-P.t-P.b;
+  const n=scores.length;
+
+  ctx.fillStyle='#f9fafb'; ctx.fillRect(0,0,W,H);
+
+  [0,25,50,75,100].forEach(v=>{
+    const y=P.t+cH*(1-v/100);
+    ctx.strokeStyle='#e5e7eb';ctx.lineWidth=1;
+    ctx.beginPath();ctx.moveTo(P.l,y);ctx.lineTo(P.l+cW,y);ctx.stroke();
+    ctx.fillStyle='#9ca3af';ctx.font='11px system-ui';ctx.textAlign='right';
+    ctx.fillText(v+'%',P.l-6,y+4);
+  });
+
+  const bands=[
+    {y0:0.7,y1:1.0,col:'rgba(34,197,94,.06)'},
+    {y0:0.5,y1:0.7,col:'rgba(245,158,11,.06)'},
+    {y0:0.0,y1:0.5,col:'rgba(239,68,68,.06)'},
+  ];
+  bands.forEach(b=>{
+    ctx.fillStyle=b.col;
+    ctx.fillRect(P.l,P.t+cH*(1-b.y1),cW,cH*(b.y1-b.y0));
+  });
+
+  ctx.beginPath();ctx.strokeStyle='#1e3a5f';ctx.lineWidth=2.5;
+  ctx.lineJoin='round';ctx.lineCap='round';
+  scores.forEach((v,i)=>{
+    const x=P.l+(n>1?i/(n-1):0.5)*cW;
+    const y=P.t+cH*(1-v/100);
+    i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+  });
+  ctx.stroke();
+
+  const step=Math.max(1,Math.floor(n/12));
+  scores.forEach((v,i)=>{
+    const x=P.l+(n>1?i/(n-1):0.5)*cW;
+    const y=P.t+cH*(1-v/100);
+    ctx.beginPath();ctx.arc(x,y,4,0,Math.PI*2);
+    ctx.fillStyle=dotCol[i];ctx.fill();
+    ctx.strokeStyle='#fff';ctx.lineWidth=1.5;ctx.stroke();
+    if(i%step===0){
+      ctx.fillStyle='#9ca3af';ctx.font='10px system-ui';
+      ctx.textAlign='center';ctx.fillText(labels[i],x,H-P.b+16);
+    }
+  });
+
+  ctx.fillStyle='#6b7280';ctx.font='11px system-ui';ctx.textAlign='center';
+  ctx.fillText('Time',P.l+cW/2,H-4);
+})();
+</script>
+</body>
+</html>
